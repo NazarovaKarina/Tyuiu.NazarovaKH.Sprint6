@@ -58,5 +58,10 @@ namespace Tyuiu.NazarovaKH.Sprint6.Task1.V3
         {
 
         }
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

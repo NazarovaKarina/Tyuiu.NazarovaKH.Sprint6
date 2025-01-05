@@ -179,6 +179,7 @@ namespace Tyuiu.NazarovaKH.Sprint6.Task1.V3
             Name = "FormMain";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Спринт 6 | Таск 1 | Вариант 3 | Назарова К.Х.";
+            Load += FormMain_Load;
             groupBoxTask_NKX.ResumeLayout(false);
             groupBoxTask_NKX.PerformLayout();
             groupBoxVar_NKX.ResumeLayout(false);
