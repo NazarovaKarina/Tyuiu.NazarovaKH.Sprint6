@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             panelUp_NKH = new Panel();
             buttonSms_NKH = new Button();
             buttonFile_NKH = new Button();
@@ -39,17 +39,17 @@
             textBoxTask_NKH = new TextBox();
             panelLeft_NKH = new Panel();
             groupBoxRes_NKH = new GroupBox();
-            panelCent_NKH = new Panel();
-            splitter1 = new Splitter();
-            chartFun_NKH = new System.Windows.Forms.DataVisualization.Charting.Chart();
             dataGridViewRes_NKH = new DataGridView();
+            panelCent_NKH = new Panel();
+            chartFun_NKH = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            splitter1 = new Splitter();
             panelUp_NKH.SuspendLayout();
             groupBoxTask_NKH.SuspendLayout();
             panelLeft_NKH.SuspendLayout();
             groupBoxRes_NKH.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewRes_NKH).BeginInit();
             panelCent_NKH.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)chartFun_NKH).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewRes_NKH).BeginInit();
             SuspendLayout();
             // 
             // panelUp_NKH
@@ -138,6 +138,17 @@
             groupBoxRes_NKH.TabStop = false;
             groupBoxRes_NKH.Text = "Вывод данных:";
             // 
+            // dataGridViewRes_NKH
+            // 
+            dataGridViewRes_NKH.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewRes_NKH.Dock = DockStyle.Fill;
+            dataGridViewRes_NKH.Location = new Point(3, 23);
+            dataGridViewRes_NKH.Name = "dataGridViewRes_NKH";
+            dataGridViewRes_NKH.RowHeadersWidth = 51;
+            dataGridViewRes_NKH.Size = new Size(244, 318);
+            dataGridViewRes_NKH.TabIndex = 0;
+            dataGridViewRes_NKH.Visible = false;
+            // 
             // panelCent_NKH
             // 
             panelCent_NKH.Controls.Add(chartFun_NKH);
@@ -148,6 +159,23 @@
             panelCent_NKH.Size = new Size(603, 344);
             panelCent_NKH.TabIndex = 2;
             // 
+            // chartFun_NKH
+            // 
+            chartArea2.Name = "ChartArea1";
+            chartFun_NKH.ChartAreas.Add(chartArea2);
+            chartFun_NKH.Dock = DockStyle.Fill;
+            legend2.Name = "Legend1";
+            chartFun_NKH.Legends.Add(legend2);
+            chartFun_NKH.Location = new Point(4, 0);
+            chartFun_NKH.Name = "chartFun_NKH";
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            chartFun_NKH.Series.Add(series2);
+            chartFun_NKH.Size = new Size(599, 344);
+            chartFun_NKH.TabIndex = 1;
+            chartFun_NKH.Text = "chart1";
+            // 
             // splitter1
             // 
             splitter1.Location = new Point(0, 0);
@@ -155,33 +183,6 @@
             splitter1.Size = new Size(4, 344);
             splitter1.TabIndex = 0;
             splitter1.TabStop = false;
-            // 
-            // chartFun_NKH
-            // 
-            chartArea1.Name = "ChartArea1";
-            chartFun_NKH.ChartAreas.Add(chartArea1);
-            chartFun_NKH.Dock = DockStyle.Fill;
-            legend1.Name = "Legend1";
-            chartFun_NKH.Legends.Add(legend1);
-            chartFun_NKH.Location = new Point(4, 0);
-            chartFun_NKH.Name = "chartFun_NKH";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            chartFun_NKH.Series.Add(series1);
-            chartFun_NKH.Size = new Size(599, 344);
-            chartFun_NKH.TabIndex = 1;
-            chartFun_NKH.Text = "chart1";
-            // 
-            // dataGridViewRes_NKH
-            // 
-            dataGridViewRes_NKH.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewRes_NKH.Dock = DockStyle.Fill;
-            dataGridViewRes_NKH.Location = new Point(3, 23);
-            dataGridViewRes_NKH.Name = "dataGridViewRes_NKH";
-            dataGridViewRes_NKH.RowHeadersWidth = 51;
-            dataGridViewRes_NKH.Size = new Size(244, 318);
-            dataGridViewRes_NKH.TabIndex = 0;
             // 
             // FormMain
             // 
@@ -193,15 +194,16 @@
             Controls.Add(panelUp_NKH);
             MinimumSize = new Size(871, 502);
             Name = "FormMain";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Спринт 6 | Таск 5 | Вариант 10 | Назарова К.Х.";
             panelUp_NKH.ResumeLayout(false);
             groupBoxTask_NKH.ResumeLayout(false);
             groupBoxTask_NKH.PerformLayout();
             panelLeft_NKH.ResumeLayout(false);
             groupBoxRes_NKH.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridViewRes_NKH).EndInit();
             panelCent_NKH.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)chartFun_NKH).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridViewRes_NKH).EndInit();
             ResumeLayout(false);
         }
 

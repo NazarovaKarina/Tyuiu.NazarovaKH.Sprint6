@@ -7,7 +7,20 @@ namespace Tyuiu.NazarovaKH.Sprint6.Task5.V10.Lib
     {
         public double[] LoadFromDataFile(string path)
         {
-            throw new NotImplementedException();
+            string[] strNum = File.ReadAllLines(path);
+            double[] nums = Array.ConvertAll(strNum, double.Parse);
+            List<double> resultList = new List<double>();
+
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (nums[i] != 0)
+                {
+                    resultList.Add(nums[i]);
+                }
+            }
+
+            double[] resNums = resultList.ToArray();
+            return resNums;
         }
     }
 }
