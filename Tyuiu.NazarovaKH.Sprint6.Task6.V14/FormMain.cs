@@ -9,7 +9,6 @@ namespace Tyuiu.NazarovaKH.Sprint6.Task6.V14
             InitializeComponent();
         }
         string openFilePath;
-        string str;
         private void buttonHelp_Click(object sender, EventArgs e)
         {
             FormAbout formAbout = new FormAbout();
@@ -27,7 +26,7 @@ namespace Tyuiu.NazarovaKH.Sprint6.Task6.V14
         private void buttonDone_Click(object sender, EventArgs e)
         {
 
-            textBoxOut.Text = ds.CollectTextFromFile(str, openFilePath);
+            textBoxOut.Text = ds.CollectTextFromFile(openFilePath);
         }
     }
 }
