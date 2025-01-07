@@ -8,10 +8,9 @@ namespace Tyuiu.NazarovaKH.Sprint6.Task6.V14.Test
         [TestMethod]
         public void CheckMethodValid()
         {
-            string str = "";
             DataService dataService = new DataService();
             string path = "C:\\DataSprint6\\InPutDataFileTask6V12.txt";
-            var res = dataService.CollectTextFromFile(str, path);
+            var res = dataService.CollectTextFromFile(path);
             Assert.AreEqual("EzAqSCaJNt loztCm", res);
         }
     }

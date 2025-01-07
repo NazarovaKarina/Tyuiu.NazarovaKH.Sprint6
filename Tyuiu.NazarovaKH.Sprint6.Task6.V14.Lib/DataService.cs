@@ -22,10 +22,5 @@ namespace Tyuiu.NazarovaKH.Sprint6.Task6.V14.Lib
 
             return resStr.ToString().Trim();
         }
-
-        public string CollectTextFromFile(string str, string path)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
